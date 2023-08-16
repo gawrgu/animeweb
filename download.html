@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download Page</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="vendors/fontawesome-free-6.4.2-web/css/all.min.css" />
+
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css" />
+
+    <!-- video player -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <a href="#" class="logo"><i class="fas fa-video-slash"></i> Aniweb</a>
+      <nav class="my-navbar">
+        <a href="/">home</a>
+        <a href="#new">anime terbaru</a>
+        <a href="#movie">movie</a>
+        <a href="#rekomendasi">rekomendasi</a>
+      </nav>
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search"></i>
+        <i class="fas fa-heart" id="heart"></i>
+      </div>
+    </header>
+
+    <!-- video -->
+    <div
+      class="video-container"
+      id="player"
+      data-plyr-provider="youtube"
+      data-plyr-embed-id="https://www.youtube.com/watch?v=Reux5Cc76po&t=2s"></div>
+
+    <div class="about-container">
+      <h3>shadow of eminance Season 2</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet id rem
+        sequi ex fugit quo, culpa neque error perspiciatis officiis hic quae?
+        Consectetur sit rem in alias vitae beatae provident temporibus aut
+        quisquam sunt? Hic dolores veniam commodi iste repellat numquam
+        inventore labore omnis architecto similique quo, modi accusantium illo.
+      </p>
+    </div>
+    <div class="screenshoots-container">
+      <h3>screenshoot</h3>
+      <div class="screenshoots-content">
+        <img src="assets/image/anime/screenshoot/1.png" alt="" />
+        <img src="assets/image/anime/screenshoot/Screenshot (69).png" alt="" />
+        <img src="assets/image/anime/screenshoot/Screenshot (70).png" alt="" />
+      </div>
+    </div>
+
+    <div class="download">
+      <h3>Download Batch</h3>
+      <div class="download-links">
+        <a href="#">googgle drive</a>
+        <a href="#">acefile</a>
+        <a href="#">krakenfiles</a>
+      </div>
+    </div>
+    <footer class="copyright">
+      <a href="download.html" class="logo"
+        ><i class="fas fa-video-slash"></i> aniweb</a
+      >
+      <p>copyright &copy; 2023 ichsan adi laksana</p>
+    </footer>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="assets/js/script.js"></script>
+    <!-- video player -->
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script>
+      const player = new Plyr("#player");
+    </script>
+  </body>
+</html>

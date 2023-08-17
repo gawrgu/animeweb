@@ -20,7 +20,7 @@ h3:hover {
 }
 
 .cutoff-text {
-  --max-lines: 1;
+  --max-lines: 2;
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
@@ -159,16 +159,21 @@ header .icons #menu-bars {
 }
 
 .home .box .content h3 {
-  font-size: 6rem;
+  font-size: 4.5rem;
   font-weight: 500;
   color: var(--white);
   padding-top: 5rem;
   text-transform: uppercase;
 }
-.home .box .content p {
+.home .box .content .p-cutoff-text {
   font-size: 1.5rem;
   color: var(--white);
-  padding: 1rem 0;
+  padding: 1rem 1;
+  text-align: justify;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
 
 .btn {
@@ -258,6 +263,14 @@ header .icons #menu-bars {
 .anime .card .card-body,
 .rekomendasi .card .card-body {
   background: #fff;
+}
+.anime .card .card-body .cutoff-text,
+.rekomendasi .card .card-body .cutoff-text {
+  --max-lines: 1;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--max-lines);
 }
 .anime .card .card-body h3,
 .rekomendasi .card .card-body h3 {
